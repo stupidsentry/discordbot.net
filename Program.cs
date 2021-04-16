@@ -20,7 +20,7 @@ namespace sentrybot
             _client = new DiscordSocketClient();
 
             _client.Log += Log;
-            var token = "ODMxMzM4OTU4NzU5Nzg4NTk0.YHTyvQ.8QgQaeomqdupzZf6UHZsZYNeo1g";
+            var token = "";
             await _client.LoginAsync(TokenType.Bot, token);
             await _client.StartAsync();
             await Task.Delay(-1);
